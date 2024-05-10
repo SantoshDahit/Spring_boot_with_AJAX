@@ -49,7 +49,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student update(Long id, Student student) {
+    public Student update(Student student) {
         student.setPassword(passwordEncoder.encode(student.getPassword()));
         Set<Role> roles = student.getRoles();
         if(roles != null && !roles.isEmpty()) {

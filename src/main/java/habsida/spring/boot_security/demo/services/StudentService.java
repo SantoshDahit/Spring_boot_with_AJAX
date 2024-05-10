@@ -12,7 +12,7 @@ public interface StudentService {
 
     void remove(Long id);
 
-    Student update(Long id, Student student);
+    Student update(Student student);
 
     Optional<Student> studentById(Long id);
 
