@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("degree").value = "";
         document.getElementById("password").value = "";
         document.getElementById("roles").value = "";
+        showAdminPanel();
     });
 
     // Fetch and populate predefined roles on page load
